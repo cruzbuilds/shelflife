@@ -96,7 +96,9 @@ Unchecked and errored items sort to the top. They're the ones you can't reason a
 
 ## Status
 
-Proof of concept, feature complete against [engagement/03-scope.md](engagement/03-scope.md): the inventory format, validation that refuses anything ambiguous, live checks for TLS certificates and domain registrations, the report, the exit codes, and the webhook. What it has not done yet is run for a month on a real inventory, which is the only test that says whether the alerts are useful or annoying. The "Not production ready" list in the scope document is honest about what that month might find.
+Proof of concept, feature complete against [engagement/03-scope.md](engagement/03-scope.md): the inventory format, validation that refuses anything ambiguous, live checks for TLS certificates and domain registrations, the report, the exit codes, and the webhook.
+
+Since 2026-09-17 it runs every morning on a real inventory, on a schedule, against the things this project itself depends on. That is the only test that says whether the alerts are useful or annoying, whether thirty days is the right default window, and which top-level domains fall back to manual dates in practice. Until there is a month of it, the four open questions at the bottom of [engagement/04-handoff.md](engagement/04-handoff.md) are open, and the "Not production ready" table there says what that month might find. Nothing here has been run by anyone but its author.
 
 ## When not to use this
 
