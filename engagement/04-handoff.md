@@ -1,7 +1,7 @@
 # 4. Handoff
 
 **Date:** 2026-09-14
-**Built by:** Chris Cruz, with Claude doing the typing and the [agentic-swarm](https://github.com/Cruzcodez/agentic-swarm) reviewing every pull request
+**Built by:** Chris Cruz, with Claude doing the typing and the [agentic-swarm](https://github.com/cruzbuilds/agentic-swarm) reviewing every pull request
 **Handed to:** whoever runs it next. Most likely Chris in a few months, with no memory of any of this.
 
 Write this at the end, for the person who gets this after you. That might be a customer, a teammate, or you in eight months with no memory of any of it.
@@ -49,7 +49,7 @@ Exact commands. Assume they're starting from a fresh machine and a fresh clone.
 
 ```bash
 # prerequisites: Python 3.11 or newer, and uv (https://docs.astral.sh/uv/)
-git clone https://github.com/Cruzcodez/shelflife
+git clone https://github.com/cruzbuilds/shelflife
 cd shelflife
 
 # install
@@ -132,7 +132,7 @@ Nothing else. No IAM, no storage, no DNS, no certificates, no third-party API ke
 
 ## Who to ask
 
-> Chris Cruz, github.com/Cruzcodez. The engagement folder and the decisions folder are the memory; read those before asking.
+> Chris Cruz, github.com/cruzbuilds. The engagement folder and the decisions folder are the memory; read those before asking.
 
 ---
 

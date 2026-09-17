@@ -25,7 +25,7 @@ RDAP_BASE = "https://rdap.org/domain/"
 DEFAULT_TIMEOUT = 10.0
 # A domain object is a few kilobytes. Anything past this is not an answer we want to parse.
 MAX_BODY_BYTES = 1_000_000
-USER_AGENT = "shelflife (+https://github.com/Cruzcodez/shelflife)"
+USER_AGENT = "shelflife (+https://github.com/cruzbuilds/shelflife)"
 
 # Seam for tests: something that takes a URL and returns (status, body text).
 FetchJson = Callable[[str, float], tuple[int, str]]

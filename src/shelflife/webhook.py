@@ -28,7 +28,7 @@ from .net import RedirectError, safe_opener
 from .report import render_json, sort_for_report
 
 DEFAULT_TIMEOUT = 10.0
-USER_AGENT = "shelflife (+https://github.com/Cruzcodez/shelflife)"
+USER_AGENT = "shelflife (+https://github.com/cruzbuilds/shelflife)"
 
 # Seam for tests: something that POSTs a JSON body and returns the HTTP status.
 Poster = Callable[[str, bytes, float], int]
