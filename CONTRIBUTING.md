@@ -35,7 +35,7 @@ The template asks for four things and means them: what changed, why, how a revie
 
 ## How reviews work here
 
-Every pull request goes through the [agentic-swarm](https://github.com/cruzbuilds/agentic-swarm) before a person reads it, and the findings are recorded in [docs/review-log.md](docs/review-log.md) with an honest column for whether the author would have caught them alone. Expect a BLOCK on the first pass; it has happened to every pull request so far, including the author's. That is the review doing its job, not a judgment.
+Every pull request goes through the [agentic-review-swarm](https://github.com/cruzbuilds/agentic-review-swarm) before a person reads it, and the findings are recorded in [docs/review-log.md](docs/review-log.md) with an honest column for whether the author would have caught them alone. Expect a BLOCK on the first pass; it has happened to every pull request so far, including the author's. That is the review doing its job, not a judgment.
 
 ## Style
 
