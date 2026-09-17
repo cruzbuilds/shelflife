@@ -2,7 +2,7 @@
 
 ## Reporting a problem
 
-Open a [GitHub security advisory](https://github.com/Cruzcodez/shelflife/security/advisories/new) on this repository. That keeps the report private until there is a fix. Please do not open a public issue for something exploitable.
+Open a [GitHub security advisory](https://github.com/cruzbuilds/shelflife/security/advisories/new) on this repository. That keeps the report private until there is a fix. Please do not open a public issue for something exploitable.
 
 You will get an acknowledgement within a few days. This is one person's project, so "within a few days" is the honest number.
 

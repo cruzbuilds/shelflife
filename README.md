@@ -1,6 +1,6 @@
 # shelflife
 
-[![CI](https://github.com/Cruzcodez/shelflife/actions/workflows/ci.yml/badge.svg)](https://github.com/Cruzcodez/shelflife/actions/workflows/ci.yml)
+[![CI](https://github.com/cruzbuilds/shelflife/actions/workflows/ci.yml/badge.svg)](https://github.com/cruzbuilds/shelflife/actions/workflows/ci.yml)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](pyproject.toml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
 [![Reviewed by agentic-swarm](https://img.shields.io/badge/reviewed%20by-agentic--swarm-8A2BE2)](docs/review-log.md)
@@ -43,11 +43,11 @@ The full reasoning, with sources, is in [engagement/02-discovery.md](engagement/
 You need Python 3.11 or newer and [uv](https://docs.astral.sh/uv/). Install it as a tool, straight from this repository:
 
 ```bash
-uv tool install git+https://github.com/Cruzcodez/shelflife@v0.1.0
+uv tool install git+https://github.com/cruzbuilds/shelflife@v0.1.0
 shelflife check --inventory inventory.example.yaml
 ```
 
-Or run it once without installing anything: `uvx --from git+https://github.com/Cruzcodez/shelflife@v0.1.0 shelflife check -i inventory.example.yaml`. Drop the `@v0.1.0` to track `main` instead of a release. From a clone, `uv sync` then `uv run shelflife ...` does the same thing.
+Or run it once without installing anything: `uvx --from git+https://github.com/cruzbuilds/shelflife@v0.1.0 shelflife check -i inventory.example.yaml`. Drop the `@v0.1.0` to track `main` instead of a release. From a clone, `uv sync` then `uv run shelflife ...` does the same thing.
 
 If you're going to change the code, use `uv sync --locked --extra dev` instead. That's what CI installs, and it's what makes `scripts/check.sh` run the same checks locally that gate a pull request. `--locked` means you get exactly the versions in `uv.lock`; if you add a dependency, run `uv lock` and commit the result.
 
@@ -138,7 +138,7 @@ If you want one of these, open an issue and say what you'd use it for. That's th
 | `CHANGELOG.md` | What changed, by version |
 | `.kiro/steering/` | Standards the agents follow |
 
-Built from [project-starter](https://github.com/Cruzcodez/project-starter). Pull requests are reviewed by [agentic-swarm](https://github.com/Cruzcodez/agentic-swarm) before they merge; what it caught is in [docs/review-log.md](docs/review-log.md).
+Built from [project-starter](https://github.com/cruzbuilds/project-starter). Pull requests are reviewed by [agentic-swarm](https://github.com/cruzbuilds/agentic-swarm) before they merge; what it caught is in [docs/review-log.md](docs/review-log.md).
 
 ## License
 

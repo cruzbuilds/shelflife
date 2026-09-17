@@ -1,6 +1,6 @@
 # Review log
 
-Every pull request on this project gets reviewed by the [agentic-swarm](https://github.com/Cruzcodez/agentic-swarm) before a human looks at it. This file records what that review actually produced, PR by PR, so the claim "built with the swarm" comes with numbers instead of vibes.
+Every pull request on this project gets reviewed by the [agentic-swarm](https://github.com/cruzbuilds/agentic-swarm) before a human looks at it. This file records what that review actually produced, PR by PR, so the claim "built with the swarm" comes with numbers instead of vibes.
 
 Each entry answers the same questions. What did the swarm flag? Which of those would a tired human reviewer have missed? What did I override, and why? And what changed in the swarm itself because of this PR? That last one matters most: a review tool that never gets corrected by real use is a review tool nobody trusts.
 
@@ -186,6 +186,12 @@ Included here because a docs-only diff got blocked for two real reasons, and bec
 ### What the swarm did that surprised me
 
 docs-reviewer checked the terminal output in the README against `inventory.example.yaml` and the date math by hand, and reported it "internally consistent." Then it noted that whether the block is "genuinely real output" is a claim no test can verify. It is real (see the screenshot in the pull request), but the reviewer was right that the README asserts something it cannot prove, and right not to pretend otherwise.
+
+### Caught between reviews, worth recording
+
+The GitHub account was renamed from `Cruzcodez` to `cruzbuilds` after these five pull requests merged. Every link in the repository still named the old account. They redirected, so nothing looked broken, and no agent had flagged them because the links were correct when they were written.
+
+This is the failure mode the swarm cannot catch: not a defect in a diff, but a fact about the world changing underneath a diff that was right at the time. The fix and the reasoning are in [ADR 0005](decisions/0005-username-rename.md). The part that made it urgent rather than cosmetic is that two of the stale links were install commands, and a retired GitHub username can be claimed by anyone.
 
 ### Running total, five pull requests
 
