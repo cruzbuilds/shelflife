@@ -13,6 +13,6 @@ First release. Everything in [engagement/03-scope.md](engagement/03-scope.md) is
 - Exit codes as a contract: `0` fine, `1` expiring or expired, `2` could not check; `1` outranks `2` ([ADR 0002](docs/decisions/0002-exit-codes.md)).
 - `--webhook` / `SHELFLIFE_WEBHOOK`: POST the JSON report when the exit code is 1 or 2, with a one-line summary Slack and Discord render; `--webhook-always` for a heartbeat.
 - Redirects followed only to public HTTPS hosts, for both RDAP and the webhook.
-- Every pull request reviewed by the [agentic-swarm](https://github.com/cruzbuilds/agentic-swarm); findings in [docs/review-log.md](docs/review-log.md).
+- Every pull request reviewed by the [agentic-review-swarm](https://github.com/cruzbuilds/agentic-review-swarm); findings in [docs/review-log.md](docs/review-log.md).
 
 The project was called expiry-tracker until the day of this release.

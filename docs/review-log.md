@@ -1,6 +1,6 @@
 # Review log
 
-Every pull request on this project gets reviewed by the [agentic-swarm](https://github.com/cruzbuilds/agentic-swarm) before a human looks at it. This file records what that review actually produced, PR by PR, so the claim "built with the swarm" comes with numbers instead of vibes.
+Every pull request on this project gets reviewed by the [agentic-review-swarm](https://github.com/cruzbuilds/agentic-review-swarm) before a human looks at it. This file records what that review actually produced, PR by PR, so the claim "built with the swarm" comes with numbers instead of vibes.
 
 Each entry answers the same questions. What did the swarm flag? Which of those would a tired human reviewer have missed? What did I override, and why? And what changed in the swarm itself because of this PR? That last one matters most: a review tool that never gets corrected by real use is a review tool nobody trusts.
 
@@ -45,7 +45,7 @@ None. Every finding was either fixed in this PR or deferred with a named owner.
 
 ### What changed in the swarm because of this PR
 
-One defect in the swarm itself. scope-reviewer handed a finding to an agent called "code-reviewer" that is not in the roster, and the swarm merge step correctly caught it under "Handoffs nobody picked up" rather than dropping it. That is the right failure mode, but the root cause is that the shared review contract does not list the actual roster, so an agent guessing at a teammate's name has nothing to check against. Fix tracked in the agentic-swarm repo: the review contract and each charter get the real roster, and the seed suite gets a case that expects a handoff to be routed to a real agent. Logged in that repo's `docs/eval-log.md`.
+One defect in the swarm itself. scope-reviewer handed a finding to an agent called "code-reviewer" that is not in the roster, and the swarm merge step correctly caught it under "Handoffs nobody picked up" rather than dropping it. That is the right failure mode, but the root cause is that the shared review contract does not list the actual roster, so an agent guessing at a teammate's name has nothing to check against. Fix tracked in the agentic-review-swarm repo: the review contract and each charter get the real roster, and the seed suite gets a case that expects a handoff to be routed to a real agent. Logged in that repo's `docs/eval-log.md`.
 
 ### What the human did that the swarm did not
 
@@ -93,7 +93,7 @@ None.
 
 Nothing in the charters. The roster fix from PR 1 held: scope-reviewer and test-reviewer both handed findings to real agents this time, and the merge step listed the two that nobody confirmed under "Handoffs nobody picked up" with the right names.
 
-One thing in how the swarm was run. test-reviewer reported it could not execute the test suite because the harness did not grant it shell approval, and scope-reviewer reconstructed the diff from `.git/logs/HEAD` because it had no git access. Both said so plainly under Noted instead of pretending, which is what the contract asks. But a test reviewer that cannot run tests is reviewing with one eye shut. Next run gets an explicit tool allowlist so the agents can run `git`, `python`, and `uv`. That is a runner concern, tracked in the agentic-swarm repo.
+One thing in how the swarm was run. test-reviewer reported it could not execute the test suite because the harness did not grant it shell approval, and scope-reviewer reconstructed the diff from `.git/logs/HEAD` because it had no git access. Both said so plainly under Noted instead of pretending, which is what the contract asks. But a test reviewer that cannot run tests is reviewing with one eye shut. Next run gets an explicit tool allowlist so the agents can run `git`, `python`, and `uv`. That is a runner concern, tracked in the agentic-review-swarm repo.
 
 ### Second pass, after the fixes
 

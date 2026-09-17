@@ -1,7 +1,7 @@
 # 4. Handoff
 
 **Date:** 2026-09-14
-**Built by:** Chris Cruz, with Claude doing the typing and the [agentic-swarm](https://github.com/cruzbuilds/agentic-swarm) reviewing every pull request
+**Built by:** Chris Cruz, with Claude doing the typing and the [agentic-review-swarm](https://github.com/cruzbuilds/agentic-review-swarm) reviewing every pull request
 **Handed to:** whoever runs it next. Most likely Chris in a few months, with no memory of any of this.
 
 Write this at the end, for the person who gets this after you. That might be a customer, a teammate, or you in eight months with no memory of any of it.

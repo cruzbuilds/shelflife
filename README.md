@@ -3,7 +3,7 @@
 [![CI](https://github.com/cruzbuilds/shelflife/actions/workflows/ci.yml/badge.svg)](https://github.com/cruzbuilds/shelflife/actions/workflows/ci.yml)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue)](pyproject.toml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE)
-[![Reviewed by agentic-swarm](https://img.shields.io/badge/reviewed%20by-agentic--swarm-8A2BE2)](docs/review-log.md)
+[![Reviewed by agentic-review-swarm](https://img.shields.io/badge/reviewed%20by-agentic--review--swarm-8A2BE2)](docs/review-log.md)
 
 Everything you own has a shelf life. This is the one place that knows all of them, and tells you before one runs out.
 
@@ -140,7 +140,7 @@ If you want one of these, open an issue and say what you'd use it for. That's th
 | `CHANGELOG.md` | What changed, by version |
 | `.kiro/steering/` | Standards the agents follow |
 
-Built from [project-starter](https://github.com/cruzbuilds/project-starter). Pull requests are reviewed by [agentic-swarm](https://github.com/cruzbuilds/agentic-swarm) before they merge; what it caught is in [docs/review-log.md](docs/review-log.md).
+Built from [project-starter](https://github.com/cruzbuilds/project-starter). Pull requests are reviewed by [agentic-review-swarm](https://github.com/cruzbuilds/agentic-review-swarm) before they merge; what it caught is in [docs/review-log.md](docs/review-log.md).
 
 ## License
 
